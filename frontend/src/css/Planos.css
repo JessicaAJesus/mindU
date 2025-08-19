@@ -1,0 +1,841 @@
+:root {
+
+  --redTick: url("data:image/svg+xml,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 x%3D%220px%22 y%3D%220px%22 width%3D%2218%22 height%3D%2218%22 viewBox%3D%220%200%2024%2024%22 style%3D%22fill%3A%23FFFFFF%3B%22%3E%3Cpath d%3D%22M12%2C2C6.477%2C2%2C2%2C6.477%2C2%2C12c0%2C5.523%2C4.477%2C10%2C10%2C10s10-4.477%2C10-10C22%2C6.477%2C17.523%2C2%2C12%2C2z%20M17.707%2C9.707l-7%2C7%20C10.512%2C16.902%2C10.256%2C17%2C10%2C17s-0.512-0.098-0.707-0.293l-3-3c-0.391-0.391-0.391-1.023%2C0-1.414s1.023-0.391%2C1.414%2C0L10%2C14.586%20l6.293-6.293c0.391-0.391%2C1.023-0.391%2C1.414%2C0S18.098%2C9.316%2C17.707%2C9.707z%22/%3E%3C/svg%3E");
+
+  --close: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%22100%22%20height%3D%22100%22%20viewBox%3D%220%2C0%2C300%2C150%22%20style%3D%22fill%3A%231A1A1A%3B%22%3E%3Cg%20fill%3D%22%234f4f4f%22%20fill-rule%3D%22nonzero%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20stroke-linecap%3D%22butt%22%20stroke-linejoin%3D%22miter%22%20stroke-miterlimit%3D%2210%22%20stroke-dasharray%3D%22%22%20stroke-dashoffset%3D%220%22%20font-family%3D%22none%22%20font-weight%3D%22none%22%20font-size%3D%22none%22%20text-anchor%3D%22none%22%20style%3D%22mix-blend-mode%3A%20normal%3B%22%3E%3Cg%20transform%3D%22scale%2810.66667%2C10.66667%29%22%3E%3Cpath%20d%3D%22M4.70703%2C3.29297l-1.41406%2C1.41406l7.29297%2C7.29297l-7.29297%2C7.29297l1.41406%2C1.41406l7.29297%2C-7.29297l7.29297%2C7.29297l1.41406%2C-1.41406l-7.29297%2C-7.29297l7.29297%2C-7.29297l-1.41406%2C-1.41406l-7.29297%2C7.29297z%22%2F%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wdth,wght@87.5,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+[data-theme='dark'] .title h2 {
+  color: #e0dffd !important;
+}
+
+body {
+  background-color: #f7f8fc !important;
+  font-family: "Montserrat", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 420;
+  font-style: normal;
+}
+
+.caixaPlanos {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 80px;
+}
+
+.caixaPlanos h2 {
+  color: #46467A;
+}
+
+@media (min-width: 1500px) and (orientation: landscape) {
+  .planCard {
+    height: 94vh !important;
+  }
+
+  .addFunc {
+    height: 94vh !important;
+  }
+}
+
+
+@media (max-width: 1024px)  and (orientation: landscape) {
+
+  .caixaPlanos {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 20px;
+  }
+
+  .price {
+    font-size: 28px !important;
+  }
+
+  .poptext {
+    margin-left: 55% !important;
+  }
+
+  .plan .inner {
+    height: 870px !important;
+  }
+
+  .featureList {
+    height: 550px !important;
+  }
+
+  .disabled {
+    &:last-child {
+      margin-top: 20px;
+    }
+  }
+
+  .planCard {
+    width: 69.5% !important;
+    overflow: auto;
+    height: 89vh !important;
+  }
+
+  .planCard.collapsed {
+    margin-left: 120px;
+    width: 900px !important;
+  }
+
+  .addFunc {
+    margin-left: 180px !important;
+    width: 82% !important;
+    overflow: auto;
+    height: 89vh !important;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+
+  .caixaPlanos {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 20px;
+  }
+
+  .price {
+    font-size: 28px !important;
+  }
+
+  .poptext {
+    margin-left: 55% !important;
+  }
+  
+  .plan .inner {
+    height: 870px !important;
+  }
+
+  .featureList {
+    height: 550px !important;
+  }
+
+  .disabled {
+    &:last-child {
+      margin-top: 30px;
+    }
+  }
+
+  .planCard {
+    width: 69.5% !important;
+    overflow: auto;
+    height: 84vh !important;
+  }
+  
+  .planCard.collapsed {
+    margin-left: 120px;
+    width: 850px !important;
+  }
+
+  .addFunc {
+    margin-left: 180px !important;
+    width: 82% !important;
+    overflow: auto;
+    height: 84vh !important;
+  }
+  
+  .addFunc.collapsed {
+    margin-left: 120px;
+    width: 1494px;
+  }
+  
+}
+
+@media (max-width: 920px) {
+
+  .caixaPlanos{
+   width: 100% !important;
+  }
+  .poptext {
+    display: none;
+  }
+
+  .plan .inner {
+    height: 1110px !important;
+  }
+
+  .price {
+    font-size: 25px !important;
+  }
+
+  .featureList {
+    height: 770px !important;
+  }
+
+  .botaoPlan {
+    padding: 1.3em 2em !important;
+    font-size: 10px !important;
+  }
+
+  .planCard {
+    margin-left: 310px;
+    width: 65.8% !important;
+    overflow: auto;
+    height: 84vh !important;
+  }
+  
+  .planCard.collapsed {
+    margin-left: 120px;
+    width: 850px !important;
+  }
+
+  .addFunc {
+    margin-left: 310px;
+    width: 75.3%;
+    overflow: auto;
+    height: 92vh;
+  }
+  
+  .addFunc.collapsed {
+    margin-left: 120px;
+    width: 1494px;
+  }
+  
+}
+
+@media (max-width: 860px) {
+  .poptext {
+    margin-left: 10% !important;
+  }
+
+  .plan .inner {
+    height: 1060px !important;
+  }
+
+  .featureList {
+    height: 750px !important;
+  }
+
+  .caixaPlanos {
+    margin-left: 50px;
+  }
+
+  .price {
+    font-size: 18px !important;
+
+    span {
+      font-size: 13px !important;
+    }
+  }
+
+  .disabled {
+    &:last-child {
+      margin-top: 50px;
+    }
+  }
+
+  .planCard {
+    margin-left: 130px !important;
+    width: 82.8% !important;
+    overflow: auto;
+    height: 85vh !important;
+  }
+  
+  .planCard.collapsed {
+    margin-left: 100px !important;
+    width: 700px !important;
+  }
+
+  .addFunc {
+    margin-left: 200px !important;
+    width: 75.3% !important;
+    overflow: auto;
+    height: 85vh !important;
+  }
+  
+  .addFunc.collapsed {
+    margin-left: 120px !important;
+    width: 700px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .planCard {
+    margin-left: 120px !important;
+    width: 82.8% !important;
+    overflow: auto;
+    height: 85.4vh !important;
+  }
+  
+  .planCard.collapsed {
+    margin-left: 100px !important;
+    width: 650px !important;
+  }
+
+  .addFunc {
+    margin-left: 200px !important;
+    width: 74% !important;
+    overflow: auto;
+    height: 85.4vh !important;
+  }
+  
+  .addFunc.collapsed {
+    margin-left: 140px !important;
+    width: 625px !important;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .assinatura {
+    display: grid;
+    justify-items: center;
+  }
+
+  .plan {
+    margin-bottom: 10%;
+  }
+
+  .caixaPlanos {
+    margin-top: 16%;
+    max-width: 90%;
+    margin-left: 22px;
+  }
+
+  .poptext {
+    margin-left: 15% !important;
+  }
+
+  .plan .inner {
+    height: 950px !important;
+  }
+
+  .featureList {
+    height: 600px !important;
+  }
+}
+
+@media (max-width: 540px) {
+  .poptext {
+    margin-left: 40% !important;
+  }
+
+  .plan .inner {
+    height: 730px !important;
+  }
+
+  .featureList {
+    height: 430px !important;
+  }
+
+  .planCard {
+    margin-left: 130px !important;
+    width: 75.8% !important;
+    overflow: auto;
+    height: 89vh !important;
+  }
+  
+  .planCard.collapsed {
+    margin-left: 100px !important;
+    width: 440px !important;
+  }
+
+  .addFunc {
+    margin-left: 120px !important;
+    width: 75.3% !important;
+    overflow: auto;
+    height: 89vh !important;
+  }
+  
+  .addFunc.collapsed {
+    margin-left: 90px !important;
+    width: 440px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .poptext {
+    margin-left: 20% !important;
+  }
+
+  .plan .inner {
+    height: 825px !important;
+  }
+
+  .featureList {
+    height: 525px !important;
+  }
+
+  .planCard {
+    margin-left: 110px !important;
+    width: 74% !important;
+    overflow: auto;
+    height: 84vh !important;
+  }
+  
+  .planCard.collapsed {
+    margin-left: 90px !important;
+    width: 330px !important;
+  }
+
+  .addFunc {
+    margin-left: 100px !important;
+    width: 75.3% !important;
+    overflow: auto;
+    height: 84vh !important;
+  }
+  
+  .addFunc.collapsed {
+    margin-left: 90px !important;
+    width: 330px !important;
+  }
+}
+
+@media (max-width: 414px) {
+  .poptext {
+    margin-left: 18% !important;
+  }
+
+  .plan .inner {
+    height: 870px !important;
+  }
+
+  .featureList {
+    height: 560px !important;
+  }
+
+  .planCard {
+    margin-left: 100px !important;
+    width: 75% !important;
+    overflow: auto;
+    height: 85vh !important;
+  }
+  
+  .planCard.collapsed {
+    margin-left: 90px !important;
+    width: 322px !important;
+  }
+
+  .addFunc {
+    margin-left: 90px !important;
+    width: 75.3% !important;
+    overflow: auto;
+    height: 85vh !important;
+  }
+  
+  .addFunc.collapsed {
+    margin-left: 90px !important;
+    width: 320px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .planCard {
+    margin-left: 90px !important;
+    width: 76% !important;
+    overflow: auto;
+    height: 90vh !important;
+  }
+  
+  .planCard.collapsed {
+    margin-left: 80px !important;
+    width: 294px !important;
+  }
+
+  .addFunc {
+    margin-left: 90px !important;
+    width: 75.3% !important;
+    overflow: auto;
+    height: 90vh !important;
+  }
+  
+  .addFunc.collapsed {
+    margin-left: 80px !important;
+    width: 294px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .poptext {
+    margin-left: 10% !important;
+  }
+
+  .plan .inner {
+    height: 930px !important;
+  }
+
+  .featureList {
+    height: 620px !important;
+  }
+
+  .planCard {
+    margin-left: 90px !important;
+    width: 75% !important;
+    overflow: auto;
+    height: 90vh !important;
+  }
+  
+  .planCard.collapsed {
+    margin-left: 80px !important;
+    width: 280px !important;
+  }
+
+  .addFunc {
+    margin-left: 80px !important;
+    width: 75.3% !important;
+    overflow: auto;
+    height: 90vh !important;
+  }
+  
+  .addFunc.collapsed {
+    margin-left: 80px !important;
+    width: 280px !important;
+  }
+
+}
+
+@media (max-width: 344px) {
+
+  .planCard {
+    margin-left: 82px !important;
+    width: 75% !important;
+    overflow: auto;
+    height: 87vh !important;
+  }
+  
+  .planCard.collapsed {
+    margin-left: 80px !important;
+    width: 263px !important;
+  }
+
+  .addFunc {
+    margin-left: 80px !important;
+    width: 75.3% !important;
+    overflow: auto;
+    height: 87vh !important;
+  }
+  
+  .addFunc.collapsed {
+    margin-left: 90px !important;
+    width: 250px !important;
+  }
+}
+
+.plan {
+  border-radius: 16px;
+  box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+  color: #ffffff;
+  border: solid 3px #6852a5;
+}
+
+.plan strong {
+  font-weight: 600;
+  color: #ffffff;
+
+}
+
+.plan .inner {
+  padding: 5%;
+  padding-top: 6%;
+  background-color: #836fbb;
+  border-radius: 12px;
+  position: relative;
+  border: double #46467A;
+  height: 830px;
+}
+
+.plan .title {
+  font-weight: 600;
+  font-size: 1.45rem;
+  color: #ffffff;
+
+}
+
+.plan .title+* {
+  margin-top: 0.75rem;
+}
+
+.plan .info+* {
+  margin-top: 1rem;
+}
+
+.plan .action {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.botaoPlan {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #46467A;
+  color: #ffffff;
+  background-color: #46467A;
+  border: 1.7px solid #252525;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  margin-left: -20px !important;
+}
+
+.botaoPlan:hover {
+  box-shadow: 0px 15px 20px #46467A !important;
+  box-shadow: 0px 15px 20px #46467A !important;
+  background-color: #f99ab3 !important;
+  color: #252525 !important;
+  border-color: transparent !important;
+  transform: translateY(-7px);
+}
+
+.botaoPlan:active {
+  transform: translateY(-1px);
+}
+
+.poptext {
+  background-color: #f99ab3;
+  margin-left: 60%;
+  margin-top: -16% !important;
+  margin-bottom: 6%;
+  font-size: 20px;
+  padding: 1px 8px 2px;
+  height: 36px;
+  border-radius: 40px;
+  font-weight: bold;
+  position: absolute;
+  border: solid 2px #ec83b4;
+}
+
+.price {
+  --color: #ffffff;
+  --color: #ffffff;
+  --priceMargin: 0;
+
+  display: flex;
+  color: var(--color);
+  align-items: center;
+  gap: 0.5625rem;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: var(--priceMargin);
+  padding-bottom: 30px;
+
+  span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--baseColor);
+  }
+}
+
+.featureList {
+  --color: #ffffff;
+  --color: #ffffff;
+  --icon: var(--redTick);
+  --height: 0.20rem;
+
+  padding: 0;
+  font-weight: 500;
+  height: 500px;
+
+  li {
+    color: var(--color);
+    margin-bottom: 0.8rem !important;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-left: 1.9rem;
+    position: relative;
+
+
+    &:before {
+      content: "";
+      background-image: var(--icon);
+      background-size: cover;
+      display: block;
+      width: 1.125rem;
+      height: 1.200rem;
+      padding-left: 0.2rem;
+      position: absolute;
+      left: 0;
+      margin-bottom: 1rem !important;
+    }
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    &.disabled {
+      color: #4f4f4f;
+      height: 2.800rem;
+      --icon: var(--close);
+    }
+
+  }
+
+}
+
+/* pagina seu plano */
+
+.titleseuplano {
+  text-align: center !important;
+  margin: 30px !important;
+  color: #46467A !important;
+}
+
+.cardseuplano {
+  background-color: #ac95e7b3 !important;
+  color: #000000;
+  text-align: center !important;
+  height: 100% !important;
+}
+
+.seuplanobody {
+  margin-top: 20px !important;
+}
+
+.cancelbtn {
+  border: 1px solid #9d71ca !important;
+  border-radius: 6px !important;
+  padding: 7px !important;
+  margin-bottom: 40px !important;
+  background-color: white;
+}
+
+.cancelbtn:active {
+  background-color: #9571ca !important;
+  transition: all 0.2s !important;
+}
+
+.cancelbtn:hover {
+  background-color: #9671ca !important;
+  transition: all 0.2s !important;
+}
+
+.cancelicon {
+  padding-left: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+.cardaddplano {
+  background-color: #7756cbe1 !important;
+  color: #000000;
+  text-align: center !important;
+  height: 100% !important;
+}
+
+.addplanbtn {
+  border: 1px solid #6852a5 !important;
+  border-radius: 6px !important;
+  padding: 7px !important;
+  margin-top: 2px !important;
+  margin-bottom: 24px !important;
+  background-color: rgb(200, 168, 255);
+}
+
+.addplanbtn:active {
+  background-color: #f8f7fc !important;
+  transition: all 0.2s !important;
+}
+
+.addplanbtn:hover {
+  background-color: #f2eefb !important;
+  transition: all 0.2s !important;
+}
+
+.cancelicon {
+  padding-left: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+/* DARK MODE */
+
+[data-theme="dark"] .titleseuplano {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .cardseuplano {
+  background-color: #d7c7ffe0 !important;
+  color: #000000;
+}
+
+[data-theme="dark"] .cancelbtn {
+  border: 1px solid #c4aeff !important;
+  background-color: white;
+}
+
+[data-theme="dark"] .cancelbtn:active {
+  background-color: #ffd3ef !important;
+  transition: all 0.2s !important;
+}
+
+[data-theme="dark"] .cancelbtn:hover {
+  background-color: #ffb1e3 !important;
+  transition: all 0.2s !important;
+}
+
+[data-theme="dark"] .cardaddplano {
+  background-color: #4f3396e1 !important;
+  color: #ffffff;
+  text-align: center !important;
+  height: 100% !important;
+}
+
+[data-theme="dark"] .addplanbtn {
+  border: 1px solid #ebc1ff !important;
+  border-radius: 6px !important;
+  padding: 7px !important;
+  margin-top: 2px !important;
+  margin-bottom: 24px !important;
+  background-color: rgb(220, 200, 255);
+}
+
+[data-theme="dark"] .addplanbtn:active {
+  background-color: #c0b0ff !important;
+  transition: all 0.2s !important;
+}
+
+[data-theme="dark"] .addplanbtn:hover {
+  background-color: #c0a5ff !important;
+  transition: all 0.2s !important;
+}
+
+.cancelicon {
+  padding-left: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+.plusicon {
+  padding-right: 6px !important;
+  padding-bottom: 2px !important;
+}
+
+/* pagina seus planos */
+
+.planCard {
+  margin-left: 310px;
+  width: 75.3%;
+  overflow: auto;
+  height: 92vh;
+  transition: margin-left 0.3s;
+}
+
+.planCard.collapsed {
+  margin-left: 120px;
+  width: 1494px;
+}
+
+/* pagina add funcionarios */
+
+.addFunc {
+  margin-left: 310px;
+  width: 75.3%;
+  overflow: auto;
+  height: 92vh;
+  transition: margin-left 0.3s;
+}
+
+.addFunc.collapsed {
+  margin-left: 120px;
+  width: 1494px;
+}

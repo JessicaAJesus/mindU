@@ -1,0 +1,63 @@
+.btnCreate {
+    height: 40px;
+    color: #46467a !important;
+    background-color: #adade0 !important;
+    border-radius: 10px 10px 10px 12px;
+    border-style: solid solid solid none;
+    border-width: 1.4px;
+    border-color: #46467a89;
+    padding: 0 15px;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+}
+
+.divGeralAcesso form .btnCreate {
+    align-self: center;
+}
+
+.formContainer .btnCreate {
+    display: flex;
+    align-self: center;
+}
+
+.divGeralAcesso form {
+    text-align: center !important;
+    align-items: center !important;
+}
+
+.divGeralAcesso {
+    display: grid;
+}
+
+[data-theme='dark'] .btnCreate {
+    height: 40px;
+    color: #ffffff !important;
+    background-color: #6565ba !important;
+    border-radius: 10px 10px 10px 12px;
+    border-style: solid solid solid none;
+    border-width: 1.4px;
+    border-color: #46467a89;
+    padding: 0 15px;
+    margin: 0;
+}
+
+
+.opcaoNumber {
+    width: 180px;
+    height: 40px;
+    border: 1.4px solid #46467a89;
+    border-radius: 10px;
+    background-color: #e4e4f9 !important;
+}
+
+[data-theme='dark'] .opcaoNumber {
+    background: #acacd2 !important;
+    color: rgb(0, 0, 0);
+}
+
+.formPag {
+    padding: 4% !important;
+    align-self: center;
+    text-align: center;
+}

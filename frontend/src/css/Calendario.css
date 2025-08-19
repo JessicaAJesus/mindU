@@ -1,0 +1,110 @@
+.fc {
+  font-family: 'Arial', sans-serif;
+}
+
+.fc-view {
+  background-color: #f9f9f9;
+}
+
+.fc-daygrid-day {
+  background-color: #fff7f7;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 100%; 
+}
+
+.fc-daygrid-day-number {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+.fc-daygrid-day.fc-day-today {
+  background-color: #bd77b879 !important;
+  border: 1px solid #ac25b8;
+  font-weight: bold;
+  color: #000000;
+  border-radius: 100%;
+}
+
+/* --- Cabeçalhos e Navegação --- */
+
+.fc-header-toolbar {
+  color: #000000;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.fc-col-header-cell {
+  background-color: #ff9eb8;
+  border: 1px solid #495057;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* --- Eventos --- */
+
+.fc-event {
+  background-color: #28a745 !important;
+  color: #fff;
+  border: 1px solid #1e7e34;
+  border-radius: 4px;
+  padding: 2px;
+  font-size: 0.9em;
+}
+
+.evento-disponivel {
+  background-color: #9a45e8 !important;
+  color: #ffffff;
+}
+
+.fc-col-header-cell-cushion{
+  color: #604c9c;
+  text-decoration: none;
+}
+
+.fc-event-title {
+  font-weight: bold;
+  font-size: 1em;
+  white-space: normal;
+}
+
+.fc-event:hover {
+  cursor: pointer;
+}
+
+.fc-event-tooltip {
+  background-color: #ffeb3b;
+  color: #333;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  border: 1px solid #ccc;
+}
+
+
+/* se tem um evento */
+.has-event {
+  color: rgb(0, 0, 0);
+  display: flex; 
+  justify-content: center;  
+  align-items: center;  
+  height: 50px;
+  border: none;  
+}
+
+.has-event::after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(255, 182, 194); 
+  border: solid 1px rgb(231, 127, 144);
+  border-radius: 50%; 
+  position: relative;
+  margin-top: -20px;
+  margin-left: 2px;
+  margin-right: -10px;    
+}

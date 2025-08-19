@@ -1,0 +1,178 @@
+.button-toggle .switch:focus-within {
+    outline-offset: 2px;
+}
+
+.switch {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.navContainer {
+    width: 100%;
+    max-width: 1300px;
+}
+
+.navCentro {
+    display: flex;
+}
+
+@media (max-width: 991px) {
+    .navCentro {
+        display: block;
+    }
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 15px;
+}
+
+.nav-item a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.custom-navbar {
+    background-color: #7766C6 !important;
+    color: #ffffff;
+    padding: 0 1.75%;
+    z-index: 9999 !important;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #cdcbcb;
+    text-decoration: underline;
+}
+
+.custom-navbar .navbar-nav .nav-link.active {
+    color: #F9B0C3 !important;
+    font-weight: bold;
+}
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    --background: #28096b;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fbd896;
+    background: var(--background);
+    transition: .5s;
+}
+
+input:checked+.slider {
+    background-color: #522ba7;
+}
+
+input:checked+.slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fbd896;
+}
+
+[data-theme='dark'] .custom-navbar {
+    background-color: #28096b !important;
+}
+
+[data-theme='dark'] .custom-navbar .navbar-nav .nav-link {
+    color: #f0f0f0;
+}
+
+[data-theme='dark'] .custom-navbar .navbar-nav .nav-link:hover {
+    color: #e0e0e0;
+}
+
+[data-theme='dark'] .custom-navbar .navbar-nav .nav-link.active {
+    color: #ff9f9f !important;
+}
+
+[data-theme='dark'] .slider {
+    --background: #aaa;
+    background-color: var(--background);
+}
+
+[data-theme='dark'] .slider:before {
+    box-shadow: inset 8px -4px 0px 0px #46467a;
+    background: var(--background);
+}
+
+.disabled-link {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: default;
+  }  

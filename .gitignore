@@ -1,0 +1,54 @@
+# Dependências
+node_modules/
+
+# Build e produção
+build/
+dist/
+.serve/
+out/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Ambiente
+.env
+
+# Cache e temporários
+.cache/
+.tmp/
+temp/
+coverage/
+*.tmp
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Yarn Plug'n'Play
+.pnp
+.pnp.js
+
+# Outros
+*.pid
+*.seed
+*.pid.lock
+
+# Arquivos de pacotes compactados
+*.tgz
+
+# Pastas específicas de backend
+uploads/
+storage/
+
+# Pastas específicas de frontend
+public/static/

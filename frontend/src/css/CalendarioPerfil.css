@@ -1,0 +1,163 @@
+.calendarioPerfil  {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+.calendario-topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-top: 16px;
+    margin-bottom: -25px;
+}
+
+.calendario-mes {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #F9B0C3;
+}
+
+.calendario-mes:hover {
+    color: #dcbaff;
+}
+
+.calendar-title {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 20px;
+}
+
+.calendar-dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    font-size: 17px;
+    width: 100%;
+}
+
+.calendario-dia {
+    font-weight: bold;
+    background: #f0f0f0;
+}
+
+.calendar-cell {
+    vertical-align: top;
+    height: auto; 
+    border: none;
+}
+
+
+.calendar-header-day {
+    font-weight: 400;
+    padding: 10px; 
+    text-align: center; 
+    border: none;
+    border-bottom: 1px solid #F9B0C3;
+    color: #333; 
+    width: 100%;
+    color: black !important;
+}
+
+.calendario-dia {
+    font-weight: bold;
+    background: #fff; 
+    border-radius: 50%;
+    height: 60px; 
+    width: 60px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: background 0.3s; 
+    cursor: pointer;
+    position: relative;
+    margin: 2px auto; 
+}
+
+.consulta {
+    font-size: 12px;
+    margin: 2px 0; 
+}
+
+.consultas {
+    display: none;
+    background-color: #e0d3f5;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 2px;
+    text-align: left;
+    border: 1px solid #6852a5;
+}
+
+.calendario-dia:hover + .consultas {
+    display: block; 
+}
+
+.calendario-dia:hover {
+    background: #d9c1f1; 
+}
+
+.bolinha {
+    display: inline-block; 
+    width: 10px;
+    height: 10px;
+    background-color: #F9B0C3;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid #e75b81;
+    top: 5px; 
+    right: 5px;
+}
+
+/*dark mode */
+[data-theme='dark'] .calendarioPerfil{
+    background-color: #7e64a8;
+    color: #1e1221 !important;
+}
+[data-theme='dark'] .calendario-dia{
+    background-color: transparent;
+    color: #fae2ff !important;
+}
+[data-theme='dark'] .calendario-dia:hover{
+    background-color: #ab90d7;
+    color: #ffffff !important;
+}
+[data-theme='dark'] .calendar-cell{
+    color: #000 !important;
+}
+[data-theme='dark'] .calendario-mes{ /*setinhas*/
+    color: #dcbaff !important;
+}
+
+[data-theme='dark'] .calendar-title .calendar-header-day {
+    color: #fae2ff;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .calendarioPerfil {
+        font-size: 16px; 
+    }
+
+    .calendario-dia {
+        height: 50px; 
+        width: 50px; 
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .calendarioPerfil {
+        width: 100%;
+    }
+
+    .calendario-dia {
+        height: 60px; 
+        width: 60px; 
+    }
+}

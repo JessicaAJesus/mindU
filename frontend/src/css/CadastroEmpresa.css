@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wdth,wght@87.5,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+  background-color: #f7f8fc !important;
+  font-family: "Montserrat", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 420;
+  font-style: normal;
+}
+
+.centralizar {
+  display: block;
+  text-align: -webkit-center;
+}
+
+.fundo-site {
+  background: rgb(244, 231, 204);
+  background: linear-gradient(180deg, #afa5dd 0%, #f7f8fc 100%);
+}
+      [data-theme='dark'] .fundo-site {
+        background: linear-gradient(180deg, #1e2736 0%, #384358 100%) !important;
+      }
+
+.fundoInfo {
+  overflow: hidden;
+}
+      .textoInfo {
+        padding: 1.3rem !important;
+        color: #2e1e5b;
+        font-size: 17px;
+      }
+        .textoInfo p {
+          text-align: justify;
+        }
+      .fotoInfo {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+        filter: contrast(1.1);
+      }
+        [data-theme='dark'] .textoInfo {
+          color: #ddd6fa !important;
+        }
+
+.textoCalc {
+  padding: 1.6rem !important;
+  border-radius: 15px;
+  color: #6852a5;
+  font-size: 17px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  /* quadriculado */
+  --color: #e4d5f1e0;
+  padding: 20px 0px;
+  background-color: #fdf8ff;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+  background-size: 55px 55px;
+}
+      .textoCalc h1 {
+        font-size: 25px;
+      }
+      .textRoxo {
+        font-size: 34px;
+        color: #6852a5;
+      }
+      .titCalc {
+        font-size: 30px;
+        font-weight: 650;
+      }
+
+      [data-theme='dark'] .textoCalc {
+        color: #ddd6fa !important;
+        background-color: #755899;
+        --color: #755899;
+        border: 3.5px solid #a180ca;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      [data-theme='dark'] .textRoxo {
+        color: #ddd6fa !important;
+      }
+
+
+.fundoForms {
+  padding: 20px 0px;
+  overflow: hidden;
+}
+
+    .blocoForms {
+      padding: 1.6rem !important;
+      border-radius: 15px;
+      color: #6852a5;
+      font-size: 17px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+      /* quadriculado */
+      padding: 20px 0px;
+      background-color: #eee8f4;
+      background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+      background-size: 55px 55px;
+    }
+
+    [data-theme='dark'] .blocoForms {
+      color: #ddd6fa !important;
+      background-color: #755899;
+        --color: #755899;
+        border: 3.5px solid #a180ca;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+.botaoBanner {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500 !important;
+  color: #000 !important;
+  background-color: transparent;
+  border: 1.7px solid #252525 !important;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+      .botaoBanner:hover {
+        box-shadow: 0px 15px 20px #d5cda6;
+        transform: translateY(-7px);
+      }
+      .botaoBanner:active {
+        transform: translateY(-1px);
+      }
+      .botaoBranco:hover {
+        box-shadow: 0px 15px 20px #b6b0b889;
+        transform: translateY(-7px);
+      }
+      .botaoBanner.roxo {
+        color: #6852a5 !important;
+        border: 1.7px solid #6852a5 !important;
+      } 
+      [data-theme='dark'] .botaoBanner {
+        color: #ffffff !important;
+        background-color: transparent !important;
+        border: 1.7px solid #e0dffd !important;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1) !important;
+    }
+      [data-theme='dark'] .botaoCALC {
+        color: #000000;
+        background-color: #e0dffdaf;
+        border: 1.7px solid #e0dffd;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1) !important;
+    }
+
+
+.inputgeral {
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #fffbfa;
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+}
+
+        .inputgeral:hover {
+          border: 2px solid lightgrey;
+          box-shadow: 0px 0px 20px -17px;
+        }
+
+        .inputgeral:active {
+          transform: scale(0.96);
+        }
+
+        .inputgeral:focus {
+          border: 2px solid grey;
+        }
+
+        .inputgeral.cadEmp {
+          margin: 5px 0px 10px 0px;
+        }
+
+.labelForms {
+  font-weight: 650;
+}
+    .input-erro {
+      border: 2px solid red;
+    }
+    .mensagem-erro {
+      color: red;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+    }
+
+.form-check {
+  text-align: left;
+}
+    input[type="radio"] {
+      pointer-events: auto; 
+    }
+    .form-check-input {
+      border: 1.4px solid #484668aa;
+    }
+
+
+/* resultado do calculo */
+
+.resultado-container {
+  display: flex;
+  border-radius: 15px;
+  color: #6852a5;
+  font-size: 17px;
+  overflow: hidden;
+
+  /* quadriculado */
+  --color: #ecd5f1e0;
+  background-color: #fffbfa;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+  background-size: 55px 55px;
+}
+
+        .resultado-esquerdo {
+          width: 35%;
+          font-size: 17px !important;
+          text-align: start;
+          padding: 20px;
+          height: auto;
+          background-color: #e8def8;
+        }
+
+        .resultado-esquerdo p {
+          margin: 0;
+          padding: 0;
+        }
+
+        .resultado-esquerdo button {
+          padding: .7em 2.7em;
+        }
+
+        .resultado-direito {
+          width: 80%;
+          padding: 20px;
+        }
+
+        .resultado-direito p {
+          font-size: 19px !important;
+          font-weight: 450;
+          text-align: start;
+        }
+
+        .resultado-direito span {
+          font-size: 28px !important;
+          font-weight: 600;
+        }
+
+        [data-theme='dark'] .resultado-container {
+          color: #ddd6fa !important;
+          background-color: #9875c3;
+        --color: #8864b4;
+        border: 0px solid #a180ca;
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme='dark'] .resultado-esquerdo {
+          color: #ddd6fa !important;
+          background-color: #755899;
+        --color: #755899;
+        border: 0px solid #a180ca;
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        }

@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+.perfilPsico {
+    background-color: #e8def8;
+    position: fixed;
+    padding: 0;
+    border-radius: 20px;
+    height: 380px;
+    width: 82%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 8px;
+    position: sticky;
+    top: 0; 
+    z-index: 100; 
+}
+
+[data-theme='dark'] .perfilPsico {
+    background-color: #6852a5 !important;
+}
+
+.fundoPsico {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    filter: blur(1.5px);
+    transform: none !important;
+}
+
+.psicologo {
+    border-radius: 20px;
+    width: 25%;
+    max-width: 170px;
+    position: relative;
+    margin-top: 110px;
+    padding: 2px;
+    margin-left: 35px;
+    background-color: #55459b63;
+}
+
+.valores {
+    padding: 1em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    background-color: #816ac2;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 160px;
+    margin-left: 90px;
+    position: absolute;
+    color: white;
+    cursor: default !important;
+}
+
+[data-theme='dark'] .valores {
+    background-color: #9e7ed6 !important;
+}
+
+  .crp{
+    font-size: 15px;
+    margin-top: 14px;
+    color: #6852a5;
+  }
+
+  [data-theme='dark'] .crp{
+    color: rgb(255, 255, 255);
+  }
+
+.agenda {
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 10px;
+    height: 600px;
+    width: 650px;
+    margin-left: -90px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 8px;
+}
+
+[data-theme='dark'] .agenda{
+    background-color: #6852a5;
+}
+
+.agendaConsulta {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #5a429b;
+    background-color: #c6bce376;
+    border: 1.7px solid #5a429b;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 55%;
+    margin-top: 20px;
+}
+[data-theme='dark'] .agendaConsulta{
+    background-color: #d9cdffde;
+}
+
+.agendaConsulta:hover {
+    box-shadow: 0px 15px 20px #9486d163;
+    transform: translateY(-7px);
+}
+
+.agendaConsulta:active {
+    transform: translateY(-1px);
+}
+
+
+.nomePsico {
+    color: #6852a5;
+    margin-bottom: -10px;
+}
+[data-theme='dark'] .nomePsico{
+   color: #E0DFFD;
+}
+
+.titulosSobre{
+    color: #de6988;
+}
+
+[data-theme='dark'] .titulosSobre{
+    color: #ff7096;
+}
+.infoPsico {
+    margin-left: 27px;
+    color: #6852a5;
+}
+[data-theme='dark'] .infoPsico{
+    color: #E0DFFD;
+ }
+
+.contato, .localizacao, .biografia{
+    background-color: white;
+    border-radius: 15px;
+    margin-left: -17%;
+    width: 120%;
+    position: relative;
+    margin-top: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .biografia{
+    background-color: #6852a5;
+    color: rgb(255, 255, 255);
+}
+[data-theme='dark'] .localizacao{
+    background-color: #6852a5;
+    color: rgb(255, 255, 255);
+}
+
+[data-theme='dark'] .contato{
+    background-color: #6852a5;
+    color: rgb(255, 255, 255);
+}
+.cardMapa-psicologo {
+    padding: 20px;
+    height: 400px;
+    background-color: #e8def8;
+  }
+  .cardMapa-psicologo iframe {
+   width: 100%;
+   height: 100%;
+ }
+
+
+/* MODAL */
+[data-theme='dark'] .agendando{
+    color: black;
+}
+
+[data-theme='dark'] .tipoConsulta{
+    color: black;
+}
+
+.botTipo{
+    background-color: #d1c0ec;
+    border-color: #a991d1;
+    margin-left: 4px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    padding: 10px 20px;   
+    margin: 5px; 
+    cursor: pointer;    
+}
+
+.botTipo:hover{
+    background-color: #a991d1;
+}
+
+.botTipo.active {
+    background-color: #996ed8; 
+    color: white;              
+    border-color: #9b7ec6;   
+}
+
+.time-slot {
+    background-color: #d1c0ec; 
+    border: 1px solid #ccc;   
+    padding: 10px 20px;        
+    margin: 5px;              
+    cursor: pointer;        
+    border-radius: 5px;   
+    transition: background-color 0.3s; 
+}
+
+.time-slot.active {
+    background-color: #a48cc9; 
+    color: white;             
+    border-color: #d1c0ec;    
+}
+
+
+.salvar{
+    background-color: #6852a5;
+    border-color: #4828d3;
+}
+
+.salvar:hover{
+    background-color: #9d8bea;
+    border-color: #ad28ad;
+}
+
+.dataSelecionada{
+    margin-right: 8px;
+}
+
+.horarioBotao {
+    background-color: #f8f9fa; 
+    border: 1px solid #9582cb; 
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px 0;
+    margin-left: -4%;
+    cursor: pointer;
+    width: 20%;
+    margin-right: 25px;
+    text-align: left; 
+}
+
+.horarioBotao:hover {
+    background-color: #9582cb;
+    color: white; 
+}
+
+.horarioBotao.active {
+    background-color: #5a429b;
+    color: white; 
+}
+
+/* CALENDARIO */
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+:root {
+    --c-theme-primary: #008FFD;
+    --c-theme-primary-accent: #CBE8FF;
+    --c-bg-primary: #D6DAE0;
+    --c-bg-secondary: #EAEBEC;
+    --c-bg-tertiary: #FDFDFD;
+    --c-text-primary: #1F1F25;
+    --c-text-secondary: #999FA6;
+}
+
+.displayCalendario {
+    margin-left: 8%;
+}
+
+.datepicker {
+    width: 95%;
+    max-width: 510px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2), 0 5px 10px 0 rgba(0, 0, 0, .1);
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+.datepicker-top {
+    margin-bottom: 1rem;
+}
+
+.tag {
+    margin-right: .5rem;
+    margin-top: .5rem;
+    border: 0;
+    background-color: var(--c-bg-secondary);
+    border-radius: 10px;
+    padding: .5em .75em;
+    font-weight: 600;
+}
+
+.month-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: #FFF;
+    color: #d88dd8;
+    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .25), 0 0 10px 0 rgba(0, 0, 0, .15);
+}
+
+.month-name {
+    font-weight: 600;
+}
+
+[data-theme='dark'] .month-name{
+    color: black;
+}
+.datepicker-calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day,
+.date {
+    justify-self: center;
+}
+
+.day {
+    color: var(--c-text-secondary);
+    font-size: .875em;
+    font-weight: 500;
+    justify-self: center;
+}
+
+.date {
+    border: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.current-day {
+    color: #FFF;
+    background-color: #afa3e363;
+    border-radius: 100%;
+    border: none;
+}
+
+.current-day:focus {
+    background-color: var(--c-theme-primary-accent);
+}
+
+.date.current-day:focus {
+    background-color: #6852a5;
+}
+
+.selected-day {
+    background-color: #5740be8c;
+    color: #fff !important;
+    border-radius: 100%;
+}
+
+.date.inactive {
+    color: rgb(177, 177, 177);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* EDITAR */
+.password-container {
+    display: flex;
+    align-items: center;
+}
+
+.password-container .form-control {
+    flex: 1;
+}
+
+.password-container .btn {
+    margin-left: 10px;
+}
+
+.fecharSaibaMaisAgendada{
+    background-color: #6852a5;
+    border: none;
+}
+
+.fecharSaibaMaisAgendada:hover{
+    background-color: #947fd1;
+    border: none;
+}
+
+/* versao mobile  */
+@media (max-width: 600px) {
+
+    .perfilPsico{
+        margin-left: 2px;
+        width: 100%;
+    }
+
+    .psicologo {
+        width: 100%;
+        max-width: 100px;
+        margin-top: 100px;
+    }
+
+    .fundoPsico {
+        height: 120px;
+    }
+
+    .agenda {
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 2px;
+    }
+
+    .contato, .biografia, .agenda {
+        width: 100%;
+        margin-left: 2px;
+    }
+
+    .datepicker {
+        padding: 0;
+        width: 100%;
+    }
+
+    .displayCalendario {
+        margin-left: 2%;
+    }
+
+    .displayCalendario {
+        margin-left: 0;
+    }
+    .navbar-toggler-icon {
+        height: 1.5em !important;
+    }
+}
+
+/* versao ipad  */
+@media (min-width: 700px) and (max-width: 900px) {
+    .perfilPsico {
+        width: 90%;
+    }
+    .agenda {
+        height: auto;
+        width: 400px;
+        max-width: 150% !important;
+        margin-left: -25px;
+    }
+    .agendaConsulta {
+        padding: 1em 2em;
+        font-size: 14px;
+        margin-left: 30%;
+        margin-top: 10px;
+    }
+    .displayCalendario {
+        margin-left: 2%;
+    }
+    .datepicker-calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .datepicker {
+        padding: 0;
+        width: 100%;
+    }
+    .datepicker-top {
+        margin: 1rem;
+    }
+    .contato, .localizacao, .biografia {
+        margin-left: -25px;
+        width: 400px;
+        max-width: 150% !important;
+    }
+}
+
+
+.increase-font-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.increase-font-button:hover {
+    background-color: #0056b3;
+}
+
+.material-symbols-outlined.iconsSaibaMais {
+    vertical-align: top;
+    margin-right: 4px;
+    margin-left: 2px;
+    font-size: 23px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 350,
+  'GRAD' 0,
+  'opsz' 24
+}
