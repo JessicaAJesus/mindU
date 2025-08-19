@@ -221,11 +221,11 @@ CREATE TABLE compras (
 );
 
  
-INSERT INTO psicologos (nome, dataNascimento, especialidade, localizacao, crp, telefone, email, CPF, senha, endereco, certificados, preferenciaHorario, disponibilidade, motivacao, objetivos, foto_perfil, biografia, especificidade)
-VALUES ('Usuário Demo', '2000-01-01', 'Psicólogo Psicanalista', 'São Paulo - SP', '111111 / CRP - 4ª Região', '11111111111', 'psicologo', '12345678900', '$2b$10$aJB28wSVkQ1S2Q3bslAzd.GIS6OJjw/lN6SWRBD5Dc06WNJoK/Yo6', 'Rua A, 123', NULL, '08:00-12:00', 'Remoto', 'Ajudar as pessoas', 'Ajudar meus pacientes a se desenvolverem.', 'padraoPerfil.png', 'Sou Psicóloga pela Universidade Paulista, atuo com a abordagem Psicanalítica. Tenho experiência com atendimento psicológico de pessoas que estão passando pela depressão, transtorno de ansiedade, conflitos amorosos, conflitos familiares e problemas de autoestima.', 'Depressão, Ansiedade, TEA, Relacionamentos');
+INSERT INTO psicologos (nome, dataNascimento, especialidade, localizacao, crp, telefone, email, CPF, senha, endereco, certificados, preferenciaHorario, disponibilidade, motivacao, objetivos, biografia, especificidade)
+VALUES ('Usuário Demo', '2000-01-01', 'Psicólogo Psicanalista', 'São Paulo - SP', '111111 / CRP - 4ª Região', '11111111111', 'psicologo', '12345678900', '$2b$10$aJB28wSVkQ1S2Q3bslAzd.GIS6OJjw/lN6SWRBD5Dc06WNJoK/Yo6', 'Rua A, 123', NULL, '08:00-12:00', 'Remoto', 'Ajudar as pessoas', 'Ajudar meus pacientes a se desenvolverem.', 'Sou Psicóloga pela Universidade Paulista, atuo com a abordagem Psicanalítica. Tenho experiência com atendimento psicológico de pessoas que estão passando pela depressão, transtorno de ansiedade, conflitos amorosos, conflitos familiares e problemas de autoestima.', 'Depressão, Ansiedade, TEA, Relacionamentos');
 
-INSERT INTO cadastroempresa (nome, email, telefone, empresa, departamento, qtdfuncionarios, planosaude, contato, foto_perfil, senha)
-VALUES ('Usuario', 'empresa', '11111111111', 'empresa', 'x', '5000', 'x', 'email', 'padraoPerfil.png', '$2b$10$aJB28wSVkQ1S2Q3bslAzd.GIS6OJjw/lN6SWRBD5Dc06WNJoK/Yo6');
+INSERT INTO cadastroempresa (nome, email, telefone, empresa, departamento, qtdfuncionarios, planosaude, contato, senha)
+VALUES ('Usuario', 'empresa', '11111111111', 'empresa', 'x', '5000', 'x', 'email', '$2b$10$aJB28wSVkQ1S2Q3bslAzd.GIS6OJjw/lN6SWRBD5Dc06WNJoK/Yo6');
 
 INSERT INTO contafuncionarios (login, senha, empresa_id, nomePlano)
 VALUES ('funcionario', 'senha', '1', 'Equilíbrio');
